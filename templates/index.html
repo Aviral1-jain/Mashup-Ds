@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block content %}
+<form method="post" enctype="multipart/form-data">
+  <label for="email">Email</label>
+  <input type="email" name="email" required />
+
+  <label for="singerName">Enter singer name</label>
+  <input name="singerName" required />
+
+  <label for="songNumber">Enter number of songs</label>
+  <input type="number" name="songNumber" required />
+
+  <label for="songDuration">Enter song duration</label>
+  <input type="number" name="songDuration" />
+
+  <label for="outputName">Enter output name</label>
+  <input name="outputName" />
+
+  <input class="btn" type="submit" value="Submit" />
+</form>
+{% endblock content %}
